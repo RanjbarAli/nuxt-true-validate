@@ -159,7 +159,7 @@ rules: [
   (value, otherProps) => {
     return {
       status: value === 'test',
-      message: 'The :attribute must be test.'
+      message: 'The :attribute: must be test.'
     };
   },
   otherCustomRuleMethod
