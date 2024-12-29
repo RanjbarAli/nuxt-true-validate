@@ -1,0 +1,50 @@
+{
+  "name": "nuxt-true-validate",
+  "version": "0.1.4",
+  "private": false,
+  "description": "A simple way to validate client-side forms",
+  "main": "dist/module.cjs",
+  "module": "dist/module.mjs",
+  "types": "dist/module.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "nuxi dev playground",
+    "prepare": "nuxt-module-build prepare",
+    "build": "nuxt-module-build build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "nuxt",
+    "module",
+    "validation",
+    "forms"
+  ],
+  "author": "Ali Ranjbar Jelodar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ranjbarali/nuxt-true-validate.git"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.13.1",
+    "@nuxt/schema": "^3.0.0"
+  },
+  "peerDependencies": {
+    "nuxt": "^3.0.0"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "^0.8.4"
+  }
+}
