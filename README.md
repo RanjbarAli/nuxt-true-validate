@@ -24,14 +24,14 @@ yarn add nuxt-true-validate
 To integrate `nuxt-true-validate` into your Nuxt project, include it in your `nuxt.config.ts` as follows:
 
 ```javascript
-export default {
+export default defineNuxtConfig({
   ...
   modules: [
     'nuxt-true-validate',
     // other modules
   ],
   ...
-}
+})
 ```
 
 ## Changing Language
@@ -39,13 +39,13 @@ export default {
 To set the language to an existing option, use:
 
 ```javascript
-export default {
+export default defineNuxtConfig({
   ...
   trueValidate: {
     lang: 'en' // Options: 'fa', 'ar', 'tr'
   },
   ...
-}
+})
 ```
 
 For a custom language, do the following:
@@ -53,13 +53,13 @@ For a custom language, do the following:
 ```javascript
 import customLanguage from 'path/to/language';
 
-export default {
+export default defineNuxtConfig({
   ...
   trueValidate: {
     lang: customLanguage
   },
   ...
-}
+})
 ```
 
 ## Usage
