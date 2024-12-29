@@ -229,7 +229,7 @@ Validates that the input value does not exist in the provided list of arguments.
 
 ### `file`
 
-Validates that the input value is an file.
+Validates that the input value is a file.
 
 ### `image`
 

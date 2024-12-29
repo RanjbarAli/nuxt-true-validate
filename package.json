@@ -1,6 +1,6 @@
 {
   "name": "nuxt-true-validate",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": false,
   "description": "A simple way to validate client-side forms",
   "main": "dist/module.cjs",
